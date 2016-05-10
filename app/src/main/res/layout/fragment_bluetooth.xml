@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BluetoothFragment">
+
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Discoverable"
+        android:onClick="OnClick"
+        android:id="@+id/BT_Discoverable_Button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"/>
+
+    <Switch
+        android:id="@+id/OnOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/switchStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/OnOff"
+        android:layout_centerHorizontal="true"
+        android:text="Medium Text"
+        android:layout_marginTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Lista urządzeń"
+        android:id="@+id/BT_LIST_Button"
+        android:onClick="OnClick"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:layout_below="@+id/Bt_Mac_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SEND/Received Data"
+        android:id="@+id/BT_RecData_TextView"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/BT_RecData_TextView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:text="Data"
+        android:id="@+id/BT_RecDataWy_TextView"
+        android:background="@color/windowBackground" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEND"
+        android:id="@+id/BT_SEND_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="60dp"/>
+
+    <EditText
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/BT_wpisz_editText"
+        android:layout_alignTop="@+id/BT_SEND_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="wpisz" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/BT_status"
+        android:layout_below="@+id/BT_LIST_Button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <EditText
+        android:id="@+id/Bt_Mac_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Bt_Connect_Client"
+        android:ems="10"
+        android:text="BC:79:AD:A5:09:4A" />
+
+    <Button
+        android:layout_below="@+id/switchStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect Server"
+        android:id="@+id/Bt_Connect_Server"
+       />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect Client"
+        android:id="@+id/Bt_Connect_Client"
+        android:layout_below="@+id/switchStatus"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
+

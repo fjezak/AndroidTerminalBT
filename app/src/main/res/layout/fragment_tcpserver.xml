@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TCPServerFragment"
+    android:layout_marginTop="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PORT"
+        android:id="@+id/TCPS_Port_TextView" />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/TCPS_Port_EditText"
+        android:text="3993"
+        android:digits="0123456789"
+        android:maxLength="4" />
+
+    <Button
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Listen"
+        android:id="@+id/TCPS_Listen_Button"
+        android:layout_toRightOf="@id/TCPS_Port_EditText" />
+
+    <TextView
+        android:layout_below="@id/TCPS_Port_EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Received Data"
+        android:id="@+id/TCPS_RecData_TextView"
+        android:layout_marginTop="5dp"/>
+
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/TCPS_RecData_TextView"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:text="Data"
+        android:id="@+id/TCPS_RecDataWy_TextView"
+        android:background="@color/windowBackground" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/TCPS_RecDataWy_TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Senddata"
+        android:id="@+id/TCPS_SendData_TextView" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:text="Data"
+        android:id="@+id/TCPS_SendDataWY_TextView"
+        android:layout_below="@+id/TCPS_SendData_TextView"
+        android:background="@color/windowBackground"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEND"
+        android:id="@+id/TCPS_Send_Button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="60dp"/>
+
+    <EditText
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/TCPS_wpisz_editText"
+        android:layout_alignTop="@+id/TCPS_Send_Button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="wpisz" />
+
+</RelativeLayout>

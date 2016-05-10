@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".TCPClientFragment"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="IP"
+        android:id="@+id/TCPC_IP_TextView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_toRightOf="@id/TCPC_IP_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PORT"
+        android:id="@+id/TCPC_Port_TextView" />
+
+    <EditText
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/TCPC_IP_TextView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/TCPC_IP_EditText"
+        android:text="192.168.0.3"
+        android:maxLength="15"
+        android:digits="0123456789." />
+
+    <EditText
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/TCPC_IP_EditText"
+        android:layout_below="@id/TCPC_IP_TextView"
+        android:layout_marginTop="5dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/TCPC_Port_EditText"
+        android:text="5800"
+        android:digits="0123456789"
+        android:maxLength="4" />
+
+    <ToggleButton
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textOn="Disconnect"
+        android:textOff="Connect"
+        android:id="@+id/TCPC_Connect_Button"
+        android:layout_above="@+id/TCPC_RecData_TextView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:checked="false" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="PING"
+        android:id="@+id/TCPC_PING_Button"
+        android:layout_below="@+id/TCPC_IP_EditText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:layout_below="@id/TCPC_PING_Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Received Data"
+        android:id="@+id/TCPC_RecData_TextView"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/TCPC_RecData_TextView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:text="Data"
+        android:id="@+id/TCPC_RecDataWy_TextView"
+        android:background="@color/windowBackground" />
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEND"
+        android:id="@+id/TCPC_Send_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="60dp"/>
+
+    <EditText
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/TCPC_Wpisz_editText"
+        android:layout_alignTop="@+id/TCPC_Send_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="wpisz" />
+
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UDPFragment"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="IP"
+        android:id="@+id/UDP_IP_TextView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_toRightOf="@id/UDP_IP_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PORT"
+        android:id="@+id/UDP_Port_TextView" />
+
+    <EditText
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/UDP_IP_TextView"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/UDP_IP_EditText"
+        android:text="192.168.0.3"
+        android:maxLength="15"
+        android:digits="0123456789." />
+
+    <EditText
+        android:layout_toRightOf="@id/UDP_IP_EditText"
+        android:layout_below="@id/UDP_IP_TextView"
+        android:layout_marginTop="5dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/UDP_Port_EditText"
+        android:text="5800"
+        android:digits="0123456789"
+        android:maxLength="4" />
+
+    <EditText
+        android:layout_toRightOf="@id/UDP_IP_EditText"
+        android:layout_below="@id/UDP_Port_EditText"
+        android:layout_marginTop="5dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/UDP_Local_Port_EditText"
+        android:text="5801"
+        android:digits="0123456789"
+        android:maxLength="4" />
+
+
+
+    <TextView
+        android:layout_below="@id/UDP_Local_Port_EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Received Data"
+        android:id="@+id/UDP_RecData_TextView" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:text="Data"
+        android:id="@+id/UDP_RecDataWy_TextView"
+        android:background="@color/windowBackground"
+        android:layout_below="@+id/UDP_RecData_TextView" />
+
+    <TextView
+        android:layout_below="@id/UDP_RecDataWy_TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sent data"
+        android:id="@+id/UDP_SendData_TextView" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:text="Data"
+        android:id="@+id/UDP_SendDataWY_TextView"
+        android:layout_below="@+id/UDP_SendData_TextView"
+        android:background="@color/windowBackground"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SEND"
+        android:id="@+id/UDP_Send_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="60dp"/>
+
+    <EditText
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/UDP_Wpisz_editText"
+        android:layout_alignTop="@+id/UDP_Send_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="wpisz" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="Close"
+        android:textOff="Listen"
+        android:checked="false"
+        android:id="@+id/UDP_Listen_Button"
+        android:layout_toRightOf="@id/UDP_Port_EditText"
+        android:layout_alignBottom="@id/UDP_IP_EditText"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"/>
+
+
+</RelativeLayout>
